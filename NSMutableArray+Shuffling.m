@@ -28,7 +28,7 @@
 	for (NSUInteger i = 0; i < [self count]; ++i) {
 
 		int nElements = [self count] - i;
-		int n = (random() % nElements) + i;
+		int n = (arc4random() % nElements) + i;
 		[self exchangeObjectAtIndex:i withObjectAtIndex:n];
 
 	}
